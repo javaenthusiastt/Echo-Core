@@ -81,7 +81,7 @@ public final class Main extends JavaPlugin {
         getServer().getPluginManager().registerEvents(afkRegionEnterListener, this);
         getServer().getPluginManager().registerEvents(new FromAfkToBoxListener(), this);
 
-        redisManager = new RedisManager("redis-12311.c11.us-east-1-3.ec2.redns.redis-cloud.com", 12311, "5krX9gMNuSSM22wpPeKyaurzob8wlFNP");
+        redisManager = new RedisManager(// Removed For Security Reasons, 12311, // Removed For Security Reasons);
         redisHelper = new RedisHelper(redisManager);
 
         registerCommand("glow", new GlowCommand());

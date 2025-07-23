@@ -113,27 +113,6 @@ public final class Main extends JavaPlugin {
         }
 
         ActionBarService.startActionBarUpdater();
-
-        new BukkitRunnable(){
-            @Override
-            public void run() {
-                double multi = sorryplspls.EchoCore.EchoBoxCore.MultiplierManager.getAfkMultiplier(Bukkit.getPlayer("sorrypls"));
-                int finalAmount = (int) Math.floor(1 * multi);
-                Bukkit.broadcastMessage("");
-                Bukkit.broadcastMessage("");
-                Bukkit.broadcastMessage("");
-                Bukkit.broadcastMessage("");
-                Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', "&7Transferring your AFK Rewards to your account..."));
-                Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', "&e&lAFK VOUCHERS! &7You recieved in total: &f" + finalAmount + " &e("+multi+"x multi)"));
-                Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', "&b&lBEACONS! &7You recieved in total: &f" + finalAmount + " &b("+multi+"x multi)"));
-                Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', "&b&lBEACONS! &7You recieved in total: &f" + finalAmount + " &b("+multi+"x multi)"));
-
-                Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', "&b&lBEACONS! &7You recieved in total: &f" + finalAmount + " &b("+multi+"x multi)"));
-
-                Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', "&b&lBEACONS! &7You recieved in total: &f" + finalAmount + " &b("+multi+"x multi)"));
-
-            }
-        }.runTask(this);
     }
 
     private void registerCommand(String name, org.bukkit.command.CommandExecutor executor) {
